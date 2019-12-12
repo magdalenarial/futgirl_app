@@ -20,6 +20,7 @@ var apellido = document.getElementById('registroApellido');
 var perfiles = document.getElementById('perfilesFutbol');
 var localidad = document.getElementById('comunas');
 var horarios = document.getElementById('horarioDisponible');
+var celular = document.getElementById('registroCelular');
 
 // De acuerdo al botón de registrar carga los datos y los envía a 
 // la base de datos con el ID: Email 
@@ -31,7 +32,8 @@ function cargarDatos() {
     imagen: email.value,
     perfil: perfiles.value,
     localidad: localidad.value,
-    horarios: horarios.value, 
+    horarios: horarios.value,
+    celular: celular.value, 
   })
     
   subirArchivo(email.value)
@@ -117,7 +119,7 @@ async function loadContainer(){
           var linkModal = document.createElement('a');
           linkModal.setAttribute("data-toggle", "modal");
           linkModal.setAttribute("data-target", "#"+user.nombre+user.apellido);
-          divUser.innerHTML+=`<div class="modal fade" id="${user.nombre+user.apellido}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="exampleModalLabel">${user.imagen}</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><p>${user.nombre}</p><p>${user.apellido}</p><p>${user.localidad}</p><p>${user.horarios}</p><button type="button" class="btn">Contactame!</button></div></div></div></div>`;
+          divUser.innerHTML+=`<div class="modal fade" id="${user.nombre+user.apellido}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="exampleModalLabel">${user.imagen}</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><p>${user.nombre}</p><p>${user.apellido}</p><p>${user.localidad}</p><p>${user.horarios}</p><button type="button" class="btn">${user.celular}</button></div></div></div></div>`;
           linkModal.appendChild(img);
           divUser.appendChild(linkModal);
         }).catch(function(error) {
@@ -141,7 +143,7 @@ async function loadContainer(){
           var linkModal = document.createElement('a');
           linkModal.setAttribute("data-toggle", "modal");
           linkModal.setAttribute("data-target", "#"+user.nombre+user.apellido);
-          divUser.innerHTML+=`<div class="modal fade" id="${user.nombre+user.apellido}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="exampleModalLabel">${user.imagen}</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><p>${user.nombre}</p><p>${user.apellido}</p><p>${user.localidad}</p><p>${user.horarios}</p><button type="button" class="btn">Contactame!</button></div></div></div></div>`;
+          divUser.innerHTML+=`<div class="modal fade" id="${user.nombre+user.apellido}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="exampleModalLabel">${user.imagen}</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><p>${user.nombre}</p><p>${user.apellido}</p><p>${user.localidad}</p><p>${user.horarios}</p><button type="button" class="btn">${user.celular}</button></div></div></div></div>`;
           linkModal.appendChild(img);
           divUser.appendChild(linkModal);
         }).catch(function(error) {
