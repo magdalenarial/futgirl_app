@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+* {
+	margin:0;
+	padding:0;
+	font-family: 'Roboto Slab', serif;
+}
+
+body {
+	font-family: 'Roboto Slab', serif;
+}
+ 
+.editarPerfil {
+	background-image: url("../images/puntos.png");
+    background-size: cover;
+}
+
+.bodyindex {
+	/* background-image: url("../images/puntos2.png");
+    background-size: cover; */
+	background:#a0c334;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+a:hover {
+	text-decoration: none;
+	color:  rgb(81, 92, 62);
+}
+
+/* COMIENZA EL NAV */
+
+header {
+	width:100%;
+}
+ 
+header nav {
+	width:100%;
+	margin:auto;
+	background:#a0c334;
+}
+ 
+.menu_bar {
+	display:none;
+}
+
+ 
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+ 
+header nav ul li {
+	float:left;
+}
+ 
+header nav ul li a {
+	color:#000000;
+	padding:20px;
+	display:block;
+	font-weight: bolder;
+}
+ 
+header nav ul li span {
+	margin-right:10px;
+}
+ 
+header nav ul li a:hover {
+	background:#c7ec56;
+}
+ 
+section {
+	padding:20px;
+}
+ 
+@media screen and (max-width:800px ) {
+	header nav {
+		width:80%;
+        height:100%;
+        left:-100%;
+		margin:0;
+		position: fixed;
+		z-index: 3;
+	}
+
+header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+ 
+.menu_bar {
+		display:block;
+		width:100%;
+		background:#000000;
+	}
+ 
+.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#a0c334;
+		color:#000000;
+		font-weight: bold;
+		font-size:1rem;
+		font-family: 'Roboto Slab', serif;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+ 
+.menu_bar span {
+		float:right;
+		font-size:1.3rem;
+	}
+}
+
+
+/* Termina Nav / empieza el centro de la app/ indice */
+
+.container {
+    display: flex;
+    flex-flow: column;
+  	justify-content: center;
+  	align-items: center;
+}
+
+
+.equipo .jugadoras {
+		text-align: center;
+		margin: 0.8rem;
+		text-shadow: #ffffff 5px 5px 0px 0px;
+}
+
+#circulo {
+        width: 8rem;
+        height: 8rem;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+		background: #f5f5f5;
+		box-shadow: #000000 5px 5px 0px 0px;
+   }
+
+#circulo2 {
+    width: 8rem;
+    height: 8rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+	background: #f5f5f5;
+	box-shadow: #000000 5px 5px 0px 0px;
+}
+
+h3 {
+    text-align: center;
+	font-size: 1rem;
+	/* text-shadow: rgba(0,0,0,0.2) 0px 3px 2px; */
+	text-shadow: #ffffff 0px 2px 2px;
+}
+
+#circulo h2 {
+	font-size: 7rem;
+	padding: 7px;
+	text-align: center;
+}
+
+#circulo2 h2 {
+	font-size: 6rem;
+	padding: 16px;
+	text-align: center;
+}
+
+h1 {
+    color: #a0c334;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* Pantalla: editar perfil */
+
+#iconoPerfil {
+	font-size: 1.2rem;
+	padding-right: 4px;
+	color: #a0c334;
+}
+
+img {
+    display:block;
+	margin:auto;
+}
+
+
+img, .circulo {
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+h5 {
+	font-size: 1.2rem;
+	font-weight: bolder;
+}
+
+
+
+#botonEditar {
+    position: fixed;
+    top: 85%;
+    left: 80%;
+    font-size: 1.9rem;
+    width: 2.9rem;
+    height: 2.9rem;
+    border-radius: 70%;
+    text-align: center;
+    background-color: #ffffff;
+    /* color: rgb(44, 73, 170); */
+	color:#000000;
+	box-shadow: #000000 3px 3px 0px 0px;
+}
+
+/* Pagina contraseña  */
+
+.iconoCandado {
+	text-align: center;
+	font-size: 2rem;
+	color: #a0c334;
+}
+
+.btn {
+    background-color: #a0c334;
+    margin: 4px;
+	border: 0.05rem solid #000000;
+
+}
+
+
+/* PERFIL de los equipos/jugadores*/
+
+.btn-edit {
+	color: #a0c334;
+	font-size: 2rem;
+}
+
+.listaPerfil, ul li {
+	list-style:none;
+}
+
+.container-lista {
+	display: flex;
+    flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista-estilo img{
+	width: 8rem;
+	height: 8rem;
+	margin-left: auto;
+	 margin-right: auto;
+	 margin-top: 1rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+	border-radius: 50%;
+	box-shadow: #a0c334 5px 5px 0px 0px;
+}
+
+
+
+#jugador h1 {
+		color: #000000;
+		font-size: 1.5rem;
+		text-align: center;
+		font-weight: bolder;
+	
+}
+
+
+/* 
+Editar Perfil  */
+
+#jugador {
+    background-color:#a0c334;
+    opacity: 0.9;
+    width: 20rem;
+    height: 36rem;
+    margin: 2rem;
+    border: 0.5rem solid rgb(255, 255, 255);
+	border-radius: 1rem;
+	-moz-border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+	box-shadow: 2px 2px 10px #a0c334;
+}
+
+.editarperfil{
+    width: 11rem;
+    margin-left: 2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'iconosfinales';
+  src:  url('iconosfinales.eot?v0hvm7');
+  src:  url('iconosfinales.eot?v0hvm7#iefix') format('embedded-opentype'),
+    url('iconosfinales.ttf?v0hvm7') format('truetype'),
+    url('iconosfinales.woff?v0hvm7') format('woff'),
+    url('iconosfinales.svg?v0hvm7#iconosfinales') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconosfinales' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e903";
+}
+.icon-bubbles:before {
+  content: "\e96c";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-switch:before {
+  content: "\e9b6";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-soccer-court:before {
+  content: "\e900";
+}
+.icon-soccer-court1:before {
+  content: "\e901";
+}
+.icon-futbol-o:before {
+  content: "\e902";
+}

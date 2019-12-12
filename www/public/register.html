@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Document</title>
+</head>
+<body class="bodyindex">
+    <div class="container" id="containerRegistro">
+        <h1>Registro de Cuenta:</h1>
+        <form id="formularioRegistro">
+            <div class="form-group">
+                <label for="registroNombre">Nombre:</label>
+                <input type="text" class="form-control" id="registroNombre" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="registroApellido">Apellido:</label>
+                <input type="text" class="form-control" id="registroApellido" placeholder="Apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="registroEmail">Email:</label>
+                <input type="email" class="form-control" id="registroEmail" placeholder="email@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3">Contraseña:</label>
+                <input type="password" class="form-control" id="registroContraseña" placeholder="contraseña" title="Minimo 6 caracteres con letras y números" required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="password2">Veficar Contraseña: </label>
+                <input type="password" class="form-control" id="verificarContraseña" placeholder="Confirme contraseña">
+            </div> -->
+            <div class="form-group">
+                <label for="inputPerfil">¿Qué perfil serás?</label>
+                <select id="perfilesFutbol" class="custom-select" required>
+                    <option selected>Elige una opción</option>
+                    <option value="equipo">Tengo un equipo</option>
+                    <option value="jugadora">Soy Jugadora</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <label for="inputComuna">En que comuna jugas</label>
+                    <select id="comunas" class="custom-select" required>
+                        <option selected>Elige una opción</option>
+                        <option value="Comuna 1">Comuna 1</option>
+                        <option value="Comuna 2">Comuna 2</option>
+                        <option value="Comuna 3">Comuna 3</option>
+                        <option value="Comuna 4">Comuna 4</option>
+                        <option value="Comuna 5">Comuna 5</option>
+                        <option value="Comuna 6">Comuna 6</option>
+                        <option value="Comuna 7">Comuna 7</option>
+                        <option value="Comuna 8">Comuna 8</option>
+                        <option value="Comuna 9">Comuna 9</option>
+                        <option value="Comuna 10">Comuna 10</option>
+                        <option value="Comuna 11">Comuna 11</option>
+                        <option value="Comuna 12">Comuna 12</option>
+                        <option value="Comuna 13">Comuna 13</option>
+                        <option value="Comuna 14">Comuna 14</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                    <label for="horarioDisponible">Horario disponible:</label>
+                    <select id="horarioDisponible" class="custom-select" required>
+                        <option selected>Elige una opción</option>
+                        <option value="Por la mañana">Por la mañana</option>
+                        <option value="Por la tarde">Por la tarde</option>
+                        <option value="Por la noche">Por la noche</option>
+                    </select>
+            </div>  
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" value="upload" id="fileButton">
+                <label class="custom-file-label" for="cargarArchivos">Elija imagen del escudo o de tu perfil</label>
+            </div>
+            <div class="form-check">
+                </br>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="agree" required> 
+                    <a href="#" class="TerminosCondiciones">Accepto Terminos y condiciones</a>.
+                </label>
+            </div>
+            </br>
+            <div class="form-group">
+                <button type="button" id="registrarFormulario" class="btn" onclick="cargarDatos();">Registrar</button>
+                <a href="../index.html" class="btn">Login</a>
+            </div>
+        </form>
+    </div>
+
+            <!-- <progress value="0" max="100" id="uploader">0%</progress>
+            <input type="file" value="upload" id="fileButton" /> -->
+        
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-storage.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
+   <script src="../js/firebase.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

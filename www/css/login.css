@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+}
+
+
+a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(26, 85, 34);
+}
+
+.main {
+    background-color: #a0c334;
+}
+
+.bodyindex {
+	background:#a0c334;
+}
+
+
+.container {
+    padding: 20px;
+}
+
+
+#containerRegistro h1 {
+    color: #000000;
+}
+
+.card-header h1 {
+    font-size: 2rem;
+}
+
+h1 {
+    color: #a0c334;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+.TerminosCondiciones {
+    color: #000000;
+    font-weight: bolder;
+}
+
+.forget-password {
+    float: right;
+    font-size: 0.7rem;
+    color: #a0c334;
+    font-weight: bolder;
+}
+
+.form-check-label {
+    font-size: 0.7rem;
+    font-weight: bolder;
+}
+
+.form-check {
+    font-size: 0.7rem;
+}
+
+.form-check-input {
+    margin-top: .1rem;
+}
+
+.form-group {
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: #a0c334;
+    margin: 4px;
+    border: 0.05rem solid #000000;
+}
+
+.help-block {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+h3 {
+    text-align: center;
+    color: #a0c334;
+}
+
+img {
+    display:block;
+margin:auto;
+}
+
