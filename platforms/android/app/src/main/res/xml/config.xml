@@ -17,7 +17,7 @@
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
     </author>
-    <content src="public/login.html" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
